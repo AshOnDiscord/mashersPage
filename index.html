@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./loco-scroll.css" />
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+  <body data-scroll-container>
+    <main data-scroll-section class="bg-darkbg m-h-screen text-slate-100">
+      <header
+        class="flex items-center justify-center bg-contain bg-center bg-no-repeat p-0 m-0"
+      >
+        <section
+          class="headerWrapper overflow-hidden relative pl-2"
+          data-scroll
+          data-scroll-class="e"
+        >
+          <section class="hWrapper bg-slate-800/50 relative pl-6 px-4">
+            <h1
+              class="text-darkprim ml-[-0.25rem] text-[9rem] font-bold leading-none"
+            >
+              MASH
+            </h1>
+            <h2 class="text-[4rem] leading-none pb-4">Peer Leaders</h2>
+          </section>
+          <div
+            class="headerBar w-2 h-0 bg-white left-0 bottom-0 absolute"
+          ></div>
+        </section>
+      </header>
+      <section id="about" class="about bg-[#04b6d2] p-8 grid grid-cols-12">
+        <div
+          class="wrapper flex items-center justify-center col-span-12 md:col-start-2 md:col-span-5 lg:col-start-3"
+        >
+          <div class="wrap max-w-2xl">
+            <h1 class="text-4xl font-semibold">About Us</h1>
+            <p class="leading-relaxed text-xl">
+              Welcome! We are the MASH Peer Leaders. We are a small group of
+              students and leaders trying to make technology easier and more
+              accessible for education. Technology is sometimes difficult and
+              confusing, so we strive to do out best to simplify and utilize it
+              in fun and educational ways.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-start-1 col-span-12 md:col-start-7 md:col-span-4 lg:col-start-8 flex md:block justify-center row-start-2 md:row-start-1"
+        >
+          <div class="img w-2/3 lg:w-2/3 mt-8 md:mt-0 md:ml-8 md:w-full"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/script.js" defer></script>
+  </body>
+</html>

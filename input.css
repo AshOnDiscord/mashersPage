@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  background-image: url("./images/header.png");
+  height: min(50vw, 100vh);
+}
+
+.headerWrapper > section {
+  right: 103%;
+  transition: all 1s;
+}
+
+.headerBar {
+  transition: all 1s 1s;
+}
+
+.e > .headerBar {
+  height: 100% !important;
+  transition: all 1s;
+}
+
+.e > section {
+  right: 0 !important;
+  transition: all 1s 1s;
+}
+
+nav {
+  height: 500vh;
+}
+
+section#about > div > div.img {
+  aspect-ratio: 21 / 16;
+  background-image: url("./images/about.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Small */
+@media (min-width: 640px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+}
+
+/* Large */
+@media (min-width: 1024px) {
+}

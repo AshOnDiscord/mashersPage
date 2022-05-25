@@ -1,0 +1,44 @@
+#screen {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  object-fit: contain;
+  animation-name: screen;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes screen {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  52% {
+    opacity: 1;
+  }
+  62% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
