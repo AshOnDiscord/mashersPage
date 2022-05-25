@@ -747,6 +747,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-\[max\(1rem\2c _9rem\)\] {
+  font-size: max(1rem, 9rem);
+}
+
+.text-\[min\(1rem\2c _9rem\)\] {
+  font-size: min(1rem, 9rem);
+}
+
+.text-\[min\(5rem\2c _9rem\)\] {
+  font-size: min(5rem, 9rem);
+}
+
+.text-\[min\(50vw\2c _9rem\)\] {
+  font-size: min(50vw, 9rem);
+}
+
+.text-\[min\(15vw\2c _9rem\)\] {
+  font-size: min(15vw, 9rem);
+}
+
+.text-\[min\(12rem\2c _4rem\)\] {
+  font-size: min(12rem, 4rem);
+}
+
+.text-\[min\(12vw\2c _4rem\)\] {
+  font-size: min(12vw, 4rem);
+}
+
+.text-\[min\(10vw\2c _4rem\)\] {
+  font-size: min(10vw, 4rem);
+}
+
+.text-\[min\(8vw\2c _4rem\)\] {
+  font-size: min(8vw, 4rem);
+}
+
+.text-\[min\(7vw\2c _4rem\)\] {
+  font-size: min(7vw, 4rem);
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -853,6 +893,16 @@ section#about > div > div.img {
 @media (min-width: 1024px) {
 }
 
+@media (min-width: 640px) {
+  .sm\:text-\[9rem\] {
+    font-size: 9rem;
+  }
+
+  .sm\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
@@ -888,6 +938,14 @@ section#about > div > div.img {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:text-\[9rem\] {
+    font-size: 9rem;
+  }
+
+  .md\:text-\[4rem\] {
+    font-size: 4rem;
   }
 }
 
