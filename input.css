@@ -91,3 +91,20 @@ section#about > div > div.img {
 li:nth-child(odd) {
   color: rgb(185, 197, 212);
 }
+
+ul > li {
+  left: -100%;
+  position: relative;
+}
+
+.memberListIV > li {
+  left: 0;
+}
+
+li:nth-child(odd) {
+  transition: all 2s !important;
+}
+
+li:nth-child(even) {
+  transition: all 1s !important;
+}

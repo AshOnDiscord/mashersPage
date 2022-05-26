@@ -605,6 +605,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0px;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -883,16 +887,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.625;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .leading-4 {
   line-height: 1rem;
 }
 
 .leading-normal {
   line-height: 1.5;
-}
-
-.leading-8 {
-  line-height: 2rem;
 }
 
 .text-slate-100 {
@@ -1033,21 +1037,30 @@ li:nth-child(odd) {
   color: rgb(185, 197, 212);
 }
 
+ul > li {
+  left: -100%;
+  position: relative;
+}
+
+.memberListIV > li {
+  left: 0;
+}
+
+li:nth-child(odd) {
+  transition: all 2s !important;
+}
+
+li:nth-child(even) {
+  transition: all 1s !important;
+}
+
 @media (min-width: 640px) {
   .sm\:col-start-2 {
     grid-column-start: 2;
   }
 
-  .sm\:col-start-3 {
-    grid-column-start: 3;
-  }
-
   .sm\:col-end-12 {
     grid-column-end: 12;
-  }
-
-  .sm\:col-end-11 {
-    grid-column-end: 11;
   }
 }
 
@@ -1066,6 +1079,14 @@ li:nth-child(odd) {
 
   .md\:col-start-7 {
     grid-column-start: 7;
+  }
+
+  .md\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .md\:col-end-11 {
+    grid-column-end: 11;
   }
 
   .md\:row-start-1 {
@@ -1096,6 +1117,14 @@ li:nth-child(odd) {
 
   .lg\:col-start-8 {
     grid-column-start: 8;
+  }
+
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .lg\:col-end-10 {
+    grid-column-end: 10;
   }
 
   .lg\:w-2\/3 {
