@@ -468,6 +468,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.card {
+  grid-column: span 1 / span 1;
+  height: 16rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(341 100% 58% / var(--tw-text-opacity));
+}
+
+.card > h1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
 .visible {
   visibility: visible;
 }
@@ -506,6 +524,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-span-12 {
   grid-column: span 12 / span 12;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .col-span-5 {
@@ -569,6 +591,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -605,12 +631,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0px;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-screen {
   height: 100vh;
 }
 
 .h-full {
   height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-2 {
@@ -661,8 +699,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type: disc;
 }
 
+.columns-12 {
+  -moz-columns: 12;
+       columns: 12;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -683,6 +734,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -721,6 +776,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(240 40% 20% / var(--tw-bg-opacity));
 }
 
+.bg-darksec {
+  --tw-bg-opacity: 1;
+  background-color: hsl(341 100% 58% / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ff0051\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 81 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -734,11 +804,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-darkprim {
   --tw-bg-opacity: 1;
   background-color: hsl(184 96% 46% / var(--tw-bg-opacity));
-}
-
-.bg-darksec {
-  --tw-bg-opacity: 1;
-  background-color: hsl(341 100% 58% / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -778,6 +843,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .p-5 {
@@ -907,6 +976,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-darkprim {
   --tw-text-opacity: 1;
   color: hsl(184 96% 46% / var(--tw-text-opacity));
+}
+
+.text-darksec {
+  --tw-text-opacity: 1;
+  color: hsl(341 100% 58% / var(--tw-text-opacity));
 }
 
 .text-slate-200 {
@@ -1046,12 +1120,60 @@ ul > li {
   left: 0;
 }
 
-li:nth-child(odd) {
-  transition: all 2s !important;
+li:nth-child(1) {
+  transition: all 1s !important;
 }
 
-li:nth-child(even) {
-  transition: all 1s !important;
+li:nth-child(2) {
+  transition: all 1s 25ms !important;
+}
+
+li:nth-child(3) {
+  transition: all 1s 50ms !important;
+}
+
+li:nth-child(4) {
+  transition: all 1s 75ms !important;
+}
+
+li:nth-child(5) {
+  transition: all 1s 100ms !important;
+}
+
+li:nth-child(6) {
+  transition: all 1s 125ms !important;
+}
+
+li:nth-child(7) {
+  transition: all 1s 150ms !important;
+}
+
+li:nth-child(8) {
+  transition: all 1s 175ms !important;
+}
+
+li:nth-child(9) {
+  transition: all 1s 200ms !important;
+}
+
+li:nth-child(10) {
+  transition: all 1s 225ms !important;
+}
+
+li:nth-child(11) {
+  transition: all 1s 250ms !important;
+}
+
+li:nth-child(12) {
+  transition: all 1s 275ms !important;
+}
+
+li:nth-child(13) {
+  transition: all 1s 300ms !important;
+}
+
+li:nth-child(14) {
+  transition: all 1s 325ms !important;
 }
 
 @media (min-width: 640px) {

@@ -101,10 +101,54 @@ ul > li {
   left: 0;
 }
 
-li:nth-child(odd) {
-  transition: all 2s !important;
+li:nth-child(1) {
+  transition: all 1s !important;
+}
+li:nth-child(2) {
+  transition: all 1s 25ms !important;
+}
+li:nth-child(3) {
+  transition: all 1s 50ms !important;
+}
+li:nth-child(4) {
+  transition: all 1s 75ms !important;
+}
+li:nth-child(5) {
+  transition: all 1s 100ms !important;
+}
+li:nth-child(6) {
+  transition: all 1s 125ms !important;
+}
+li:nth-child(7) {
+  transition: all 1s 150ms !important;
+}
+li:nth-child(8) {
+  transition: all 1s 175ms !important;
+}
+li:nth-child(9) {
+  transition: all 1s 200ms !important;
+}
+li:nth-child(10) {
+  transition: all 1s 225ms !important;
+}
+li:nth-child(11) {
+  transition: all 1s 250ms !important;
+}
+li:nth-child(12) {
+  transition: all 1s 275ms !important;
+}
+li:nth-child(13) {
+  transition: all 1s 300ms !important;
+}
+li:nth-child(14) {
+  transition: all 1s 325ms !important;
 }
 
-li:nth-child(even) {
-  transition: all 1s !important;
+@layer components {
+  .card {
+    @apply bg-white text-darksec col-span-1 h-64;
+  }
+  .card > h1 {
+    @apply text-xl font-bold bg-slate-200 p-5;
+  }
 }
