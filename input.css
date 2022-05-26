@@ -48,3 +48,46 @@ section#about > div > div.img {
 /* Large */
 @media (min-width: 1024px) {
 }
+
+.factWrapper > .factbar {
+  transition: all 0.5s 1s;
+}
+
+.factWrapper > p {
+  transition: all 1s;
+}
+
+.factIV > p {
+  left: 0;
+  transition: all 1s 0.5s;
+}
+
+.factIV > .factbar {
+  left: 0;
+  transition: all 0.5s;
+  height: 100%;
+}
+
+.fancyText {
+  background-image: linear-gradient(90deg, #ffffff, #ffffff);
+  background-repeat: no-repeat;
+  background-size: 100% 0.125rem;
+  background-position: bottom left;
+}
+
+.teacher {
+  text-decoration: none;
+}
+
+.teacher > span {
+  transition: all 0.25s;
+}
+
+.teacher:hover > span {
+  top: 100%;
+  opacity: 1;
+}
+
+li:nth-child(odd) {
+  color: rgb(185, 197, 212);
+}
