@@ -146,9 +146,27 @@ section#about > div > div.img {
 
 @layer components {
   .card {
-    @apply bg-white text-darksec col-span-1 h-64;
+    @apply bg-white text-darksec lg:col-span-4 min-h-[16rem] md:col-span-6 col-span-12 drop-shadow-[0_0_0_rgba(0,0,0,1)] transition-all duration-300;
+  }
+  .card:hover {
+    @apply translate-x-4 -translate-y-4 drop-shadow-[-1rem_1rem_0_rgba(0,0,0,1)];
   }
   .card > h1 {
-    @apply text-xl font-bold bg-slate-200 p-5;
+    @apply text-2xl font-bold bg-slate-200 px-5 pt-5 pb-3 font-mono;
   }
+  .card li {
+    @apply text-lg whitespace-normal mb-2 leading-7 font-mono;
+  }
+  #usList pre {
+    @apply font-sans text-lg;
+  }
+}
+
+#projectContainer {
+  transition: all 0.5s ease-in-out;
+}
+
+#projectContainer.gridIV {
+  top: 0;
+  opacity: 1;
 }
