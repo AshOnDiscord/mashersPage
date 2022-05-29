@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 header {
-  background-image: url("./images/header.png");
   height: min(50vw, 100vh);
 }
 
@@ -37,21 +36,45 @@ section#about > div > div.img {
   background-position: center;
 }
 
-/* Small */
-@media (min-width: 640px) {
+/* 720p */
+/* @media (min-width: 1280px) { */
+header {
+  background-image: url("./images/720p/header720p.png");
+  background-image: url("./images/720p/header720p.webp");
+  background-image: url("./images/720p/header720p.avif");
+}
+/* } */
+
+/* 1080p */
+@media (min-width: 1920px) {
+  header {
+    background-image: url("./images/1080p/header1080p.png");
+    background-image: url("./images/1080p/header1080p.webp");
+    background-image: url("./images/1080p/header1080p.avif");
+  }
 }
 
-/* Medium */
-@media (min-width: 768px) {
+/* 2k */
+@media (min-width: 2048px) {
+  header {
+    background-image: url("./images/2k/header2k.png");
+    background-image: url("./images/2k/header2k.webp");
+    background-image: url("./images/2k/header2k.avif");
+  }
 }
 
-/* Large */
-@media (min-width: 1024px) {
+/* 4k */
+@media (min-width: 4096px) {
+  header {
+    background-image: url("./images/4k/header4k.png");
+    background-image: url("./images/4k/header4k.webp");
+    background-image: url("./images/4k/header4k.avif");
+  }
 }
 
-.factWrapper > .factbar {
+/*.factWrapper > .factbar {
   transition: all 0.5s 1s;
-}
+} */
 
 .factWrapper > p {
   transition: all 1s;
@@ -59,12 +82,12 @@ section#about > div > div.img {
 
 .factIV > p {
   left: 0;
-  transition: all 1s 0.5s;
+  /* transition: all 1s 0.5s;*/
 }
 
 .factIV > .factbar {
   left: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-out;
   height: 100%;
 }
 
@@ -146,9 +169,10 @@ section#about > div > div.img {
 
 @layer components {
   .card {
-    @apply bg-white text-darksec lg:col-span-4 min-h-[16rem] md:col-span-6 col-span-12 drop-shadow-[0_0_0_rgba(0,0,0,1)] transition-all duration-300;
+    @apply bg-white text-darksec lg:col-span-4 min-h-[16rem] md:col-span-6 col-span-12 drop-shadow-[0_0_0_rgba(0,0,0,1)] transition-all duration-300 selection:bg-darksec;
   }
-  .card:hover {
+  .card:hover,
+  .card:active {
     @apply translate-x-4 -translate-y-4 drop-shadow-[-1rem_1rem_0_rgba(0,0,0,1)];
   }
   .card > h1 {
@@ -159,6 +183,19 @@ section#about > div > div.img {
   }
   #usList pre {
     @apply font-sans text-lg;
+  }
+  .card h1::selection {
+    @apply text-slate-200;
+  }
+  .card li::selection {
+    @apply text-white;
+  }
+  #projects > h1::selection {
+    @apply bg-slate-100;
+  }
+  #usList li:nth-child(odd) > pre::selection,
+  #usList .teacher::selection {
+    background: rgb(185, 197, 212);
   }
 }
 

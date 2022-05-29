@@ -37,7 +37,9 @@
         <div
           class="wrapper flex items-center justify-center col-span-12 md:col-start-2 md:col-span-5 lg:col-start-3"
         >
-          <div class="wrap max-w-full">
+          <div
+            class="wrap max-w-full selection:text-darkprim selection:bg-slate-100"
+          >
             <h1 class="text-4xl font-semibold">About Us</h1>
             <p class="leading-relaxed text-xl">
               Welcome! We are the MASH Peer Leaders. We are a small group of
@@ -71,7 +73,7 @@
       </section>
       <div class="grid wrape grid-cols-12">
         <section
-          class="us p-8 col-end-13 col-start-1 sm:col-start-2 sm:col-end-12 md:col-start-3 md:col-end-11 lg:col-start-4 lg:col-end-10"
+          class="us p-8 col-end-13 col-start-1 sm:col-start-2 sm:col-end-12 md:col-start-3 md:col-end-11 lg:col-start-4 lg:col-end-10 selection:text-darkbg selection:bg-slate-100"
           id="us"
         >
           <h1 class="text-4xl font-semibold mt-10">The Team!</h1>
@@ -132,7 +134,11 @@
           </ul>
         </section>
       </div>
-      <section id="projects" class="bg-darksec p-16 flex justify-center">
+      <section
+        id="projects"
+        class="bg-darksec p-16 flex flex-col items-center gap-8"
+      >
+        <h1 class="text-4xl font-mono font-semibold">Projects</h1>
         <div
           id="projectContainer"
           class="grid grid-cols-12 gap-8 relative top-20 opacity-0"
